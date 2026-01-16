@@ -134,11 +134,14 @@ git push
 這樣就完成 從零開始用 SSH 上傳專案到 GitHub 的流程了。
 以後修改後只需要：
 
+```cmd
 git add .
 git commit -m "修改說明"
 git push
+```
 
+最後請用jsdelivr轉檔才能使用
+- https://www.jsdelivr.com/github
 
-如果你想，我可以幫你整理一個 「一步到位 SSH 上傳 GitHub 流程圖」，用圖像更直覺地記住每個步驟。
 
 你想要我幫你做嗎？
