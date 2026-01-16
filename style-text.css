@@ -1,0 +1,83 @@
+body {
+  background-color: #faf3e0;
+  color: #3e3e3e;
+  font-family: "Comic Sans MS", serif;
+}
+
+h1,
+h2,
+h3 {
+  color: #4e342e;
+}
+
+a {
+  color: #d2691e;
+  text-decoration: underline;
+}
+
+.comment,
+.note {
+  color: #6b4f4f;
+  font-style: italic;
+}
+
+.txt-darkRed {
+  color: #800020; /*酒紅色*/
+}
+
+.txt-iron-gray {
+  color: #5C5554; /*鐵灰色*/
+}
+
+.txt-brown {
+  color: #6b4f4f; /*棕色*/
+}
+
+.txt-black {
+  color: #1a1a1a; /*黑色*/
+}
+
+.txt-darkGreen {
+  color: #2e4a3f; /*墨綠色*/
+}
+
+.txt-Charcoal-Gray {
+  color: #333333; /*石灰色*/
+}
+
+.txt-dark-green {
+  color: #228b22; /*深綠色*/
+}
+
+/* 整體 code 區塊樣式 */
+code,
+pre {
+  background-color: #f2e6c9 !important; /* 卡其背景 */
+  color: #4b3f2f !important; /* 深咖非文字 */
+  font-family: "Courier New", monospace;
+  padding: 0.3em 0.5em;
+  border-radius: 4px;
+}
+
+/* 語法高亮（依語法標示器 class） */
+.token.keyword {
+  color: #d2691e; /* 暖橘 */
+  font-weight: bold;
+}
+
+.token.string {
+  color: #e1b16a; /* 暖黃 */
+}
+
+.token.comment {
+  color: #6b4f4f; /* 棕灰 */
+  font-style: italic;
+}
+
+.token.function {
+  color: #228b22; /* 深綠 */
+}
+
+.token.number {
+  color: #a0522d; /* 暗橘紅 */
+}
