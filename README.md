@@ -19,9 +19,9 @@ git --version
 2️⃣ 生成 SSH Key（如果還沒設定過）
 
 在終端機輸入：
-
+```cmd
 ssh-keygen -t ed25519 -C "你的_email@example.com"
-
+```
 
 按 Enter 接受預設儲存位置（通常是 ~/.ssh/id_ed25519）
 
@@ -30,26 +30,28 @@ ssh-keygen -t ed25519 -C "你的_email@example.com"
 接著啟用 SSH Agent 並加入金鑰：
 
 # 啟動 SSH agent
+```cmd
 eval "$(ssh-agent -s)"
-
+```
 # 加入金鑰
+```cmd
 ssh-add ~/.ssh/id_ed25519
-
+```
 3️⃣ 將 SSH Key 加入 GitHub
 
 打開 GitHub → 點右上角你的頭像 → Settings → SSH and GPG keys → New SSH key
 
 複製公鑰（id_ed25519.pub）內容：
-
+```cmd
 cat ~/.ssh/id_ed25519.pub
-
+```
 
 貼上到 GitHub 的 Key 欄位，給個名稱（例如「My Laptop」），按 Add SSH key。
 
 測試連線：
-
+```cmd
 ssh -T git@github.com
-
+```
 
 如果成功，會顯示：
 
@@ -79,9 +81,9 @@ cd ~/projects/my-project
 
 
 初始化 Git：
-
+```cmd
 git init
-
+```
 
 設定使用者名稱與 Email：
 
@@ -91,9 +93,9 @@ git config --global user.email "你的_email@example.com"
 6️⃣ 新增檔案並提交 (commit)
 
 新增檔案：
-
+```cmd
 git add .
-
+```
 
 提交：
 
@@ -104,25 +106,26 @@ git remote add origin git@github.com:你的帳號/my-project.git
 
 
 檢查是否成功：
-
+```cmd
 git remote -v
-
+```
 
 會看到：
-
+```cmd
 origin  git@github.com:你的帳號/my-project.git (fetch)
 origin  git@github.com:你的帳號/my-project.git (push)
-
+```
 8️⃣ 推送到 GitHub
+```cmd
 git branch -M main   # 將分支改為 main (如果尚未建立)
 git push -u origin main
-
+```
 
 第一次推送可能會要求你確認 SSH 連線，輸入 yes 即可。
 之後就可以用：
-
+```cmd
 git push
-
+```
 
 來更新。
 
