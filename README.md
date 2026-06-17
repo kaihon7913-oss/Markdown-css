@@ -143,5 +143,3 @@ git push
 最後請用jsdelivr轉檔才能使用
 - https://www.jsdelivr.com/github
 
-
-你想要我幫你做嗎？
