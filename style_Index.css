@@ -1,0 +1,23 @@
+.url-text{
+font-size: 20px;
+}
+
+.table_index{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+
+li {
+    padding: 8px;
+    }
+
+a{
+    text-decoration:none;
+    }
+a:hover{
+    text-decoration:none;
+    color: #5B5B5B;
+    }
